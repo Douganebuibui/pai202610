@@ -15,5 +15,11 @@ TurtleBot3 Waffle Pi (ROS 2 Humble / Gazebo) を用い、YOLOv8による物体�
 ```bash
 export TURTLEBOT3_MODEL=waffle_pi
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
+
+### 2.　自律制御ノードの実行 (Terminal 2)
+```bash
+python3 /workspace/follow_target.py
+```
 
 ※ ロボットの位置を初期化したい場合は、Gazebo画面上で Shift + Ctrl + R を押す。
